@@ -1,181 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bikram's Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/ddc205d57e.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<div id="header">
-    <div class="container">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
         <nav>
-            <img src="image/logo.png.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+          <img src="image/logo.png.png" class="logo" />
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
         <div class="header-text">
-            <p>Web Developer</p>
-            <h1>Hay! I'm <span>Bikram</span><br>Roy From India.</h1>
+          <p>Web Developer</p>
+          <h1>Hay! I'm <span>Bikram</span><br />Roy From India.</h1>
         </div>
+      </div>
     </div>
-</div>
-<!--------------------about-------------->
-<div id="about">
-    <div class="container">
+    <!--------------------about-------------->
+    <div id="about">
+      <div class="container">
         <div class="row">
-            <div class="about-col-1">
-                <img src="image/2.jpg">
+          <div class="about-col-1">
+            <img src="image/2.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Privacy is myth just like Democracy .</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+              <p class="tab-links" onclick="opentab('experience', event)"> Experience</p>
+              <p class="tab-links" onclick="opentab('education', event)">Education</p>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Privacy is myth just like Democracy .</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Web Devloper</span><br>Desiging website interfaces</li>
-                            <li><span>Python Devloper</span><br>Python programming</li>
-                            <li><span>Java Devloper</span><br>Basis java </li>
-                            <li><span>Cyber Security</span><br>HACKKERRRR</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023</span><br>Intership at Persistent System.ltd</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2021-2024</span><br>B.TECH in CSE at Netaji Subash Engineering College,KOLKATA</li>
-                            <li><span>2017-2020</span><br>Diploma in Footwear Technology at CFTC,BUDGE BUDGE</li>
-                            <li><span>2017</span><br>Higher Secondary at Salar E.Z.H.S School</li>
-                            <li><span>2015</span><br>Madhyamik at Salar E.Z.H.S School </li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--------------------services---------------------->
-<div id="servies">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list"> 
-            <div>
-                <i class="fa-solid fa-laptop-code fa-bounce"></i>
-                <h2>Web Devlopment</h2>
-                <p>this is new webpage for porfolio . ronaldo is the best player of all time</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-java fa-beat"></i>
-                <h2>java programming</h2>
-                <p>this is new webpage for porfolio . ronaldo is the best player of all time</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-python fa-flip"></i>
-                <h2>Python programming</h2>
-                <p>this is new webpage for porfolio . ronaldo is the best player of all time</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!--------------------portfolio-------------->
 
-<div id="portfolio">
-    <div class="container">
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Developer</span><br />Designing website interfaces</li>
+                <li><span>Python Developer</span><br />Python programming</li>
+                <li><span>Java Developer</span><br />Basic Java</li>
+                <li><span>Cyber Security</span><br />Hacker</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023</span><br />Internship at Persistent Systems Ltd</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2021-2024</span><br />B.TECH in CSE at Netaji Subash Engineering College, KOLKATA</li>
+                <li><span>2017-2020</span><br />Diploma in Footwear Technology at CFTC, BUDGE BUDGE</li>
+                <li><span>2017</span><br />Higher Secondary at Salar E.Z.H.S School</li>
+                <li><span>2015</span><br />Madhyamik at Salar E.Z.H.S School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------services---------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-laptop-code fa-bounce"></i>
+            <h2>Web Devlopment</h2>
+            <p>this is new webpage for porfolio . ronaldo is the best player of all time</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-java fa-beat"></i>
+            <h2>java programming</h2>
+            <p>this is new webpage for porfolio . ronaldo is the best player of all time</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-python fa-flip"></i>
+            <h2>Python programming</h2>
+            <p>
+              this is new webpage for porfolio . ronaldo is the best player of
+              all time
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------portfolio-------------->
+
+    <div id="portfolio">
+      <div class="container">
         <h1>My Work</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="image/logo.png.png">
-                <div class="layer">
-                    <h3>LOGO</h3>
-                    <p>disc</p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
+          <div class="work">
+            <img src="image/logo.png.png" />
+            <div class="layer">
+              <h3>LOGO</h3>
+              <p>disc</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
             </div>
-            <div class="work">
-                <img src="image/logo.png.png">
-                <div class="layer">
-                    <h3>LOGO</h3>
-                    <p>disc</p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="image/logo.png.png" />
+            <div class="layer">
+              <h3>LOGO</h3>
+              <p>disc</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
             </div>
-            <div class="work">
-                <img src="image/logo.png.png">
-                <div class="layer">
-                    <h3>LOGO</h3>
-                    <p>disc</p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="image/logo.png.png" />
+            <div class="layer">
+              <h3>LOGO</h3>
+              <p>disc</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
             </div>
-            <a href="#" class="btn">See More</a>
+          </div>
+          <a href="#" class="btn">See More</a>
         </div>
+      </div>
     </div>
-</div>
-<!--------------------contact-------------->
-<div id="contact">
-    <div class="container">
+    <!--------------------contact-------------->
+    <div id="contact">
+      <div class="container">
         <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i> bikram9991@gmail.com</p>
-                <p><i class="fa-brands fa-whatsapp"></i> 8145469430</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/ibikram97"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/__bikramroy__"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/bikram-roy-b2823a250/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/wc-bikram"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="image/myResume.pdf" download class="btn btn2">Download CV</a>
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> bikram9991@gmail.com</p>
+            <p><i class="fa-brands fa-whatsapp"></i> 8145469430</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/ibikram97"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/__bikramroy__"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/bikram-roy-b2823a250/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/wc-bikram"><i class="fa-brands fa-github"></i></a>
             </div>
-            <div class="contact-right">
-               <form>
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your email" required>
-                <textarea name="message" rows="8" placeholder="Your Message "></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
-               </form>
-            </div>
+            <a href="image/myResume.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your email" required/>
+              <textarea
+                name="message"
+                rows="8"
+                placeholder="Your Message "
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
         </div>
-    </div>
-    <div class="copyright">
+      </div>
+      <div class="copyright">
         <p>Copyright @Bikram Roy.</p>
+      </div>
     </div>
-</div>
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-tab");
+      function opentab(tabname, event) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
-    }
-
-    
-</script>
-
-
-</body>
+      }
+    </script>
+  </body>
 </html>
