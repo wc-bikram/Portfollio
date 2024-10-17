@@ -8,6 +8,50 @@ body{
     background: #262626;
     color: #fff;
 }
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .header-text h1 {
+      font-size: 40px;
+    }
+  
+    .header-text p {
+      font-size: 20px;
+    }
+  }
+  
+  /* Tablet View */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .header-text h1 {
+      font-size: 48px;
+    }
+  
+    .services-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
 /*--------home--------*/
 #header{
     width: 100%;
@@ -38,7 +82,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #050505;
+    color: whitesmoke;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -114,10 +158,10 @@ nav ul li a:hover::after{
     bottom: -8px;
     transition:  0.5s;
 }
-
-.tab-links.active-link::after{
+.tab-links:hover::after {
     width: 50%;
-}
+    background: #ff004f; /* Change the background color on hover */
+  }
 .tab-contents ul li{
     list-style-type: none;
     margin: 10px 0;
@@ -154,7 +198,7 @@ nav ul li a:hover::after{
 }
 .services-list div i{
     font-size: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 .services-list div h2{
     font-size: 30px;
