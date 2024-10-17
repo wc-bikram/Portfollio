@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bikram's Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/ddc205d57e.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="image/logo.png.png" class="logo" />
-          <ul>
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-text">
-          <p>Web Developer</p>
-          <h1>Hay! I'm <span>Bikram</span><br />Roy From India.</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bikram's Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/ddc205d57e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="image/logo.png.png" class="logo" />
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
         </div>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Aspirant Software Developer</p>
+        <h1>Hay! I'm <span>Bikram</span><br />Roy From India.</h1>
       </div>
     </div>
+  </div>
     <!--------------------about-------------->
     <div id="about">
       <div class="container">
@@ -36,7 +40,8 @@
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>Privacy is myth just like Democracy .</p>
+            <p> A B.Tech graduate from Netaji Subhash Engineering College, with a specialization in Computer Science and Engineering, I'm currently completing my studies while having gained hands-on experience as a Graduate Engineer at Persistent Systems. My core competencies lie in MySQL, software requirements, and system development, skills honed through both academic projects and professional engagements.
+              During my internship at Persistent Systems, our team leveraged my systems development expertise to contribute to the Martian summer internship program, enhancing our coding practices and verbal communication. I am motivated by the prospect of integrating my technical background with my previous supervisory experience at Ajanta Shoes, aiming to enrich our team with diverse perspectives and a multidisciplinary skill set..</p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
               <p class="tab-links" onclick="opentab('experience', event)"> Experience</p>
@@ -45,10 +50,9 @@
 
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>Web Developer</span><br />Designing website interfaces</li>
+                <li><span>Web Development</span><br />Java, JavaScript, React.js, Node.js</li>
                 <li><span>Python Developer</span><br />Python programming</li>
-                <li><span>Java Developer</span><br />Basic Java</li>
-                <li><span>Cyber Security</span><br />Hacker</li>
+                <li><span>Java Developer</span><br />Basic Java, Spring Boot</li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
@@ -145,7 +149,7 @@
               <a href="https://www.linkedin.com/in/bikram-roy-b2823a250/"><i class="fa-brands fa-linkedin"></i></a>
               <a href="https://github.com/wc-bikram"><i class="fa-brands fa-github"></i></a>
             </div>
-            <a href="image/myResume.pdf" download class="btn btn2">Download CV</a>
+            <a href="image/Resume Accenture.pdf" download class="btn btn2">Download CV</a>
           </div>
           <div class="contact-right">
             <form>
@@ -166,20 +170,5 @@
       </div>
     </div>
 
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-
-      function opentab(tabname, event) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
   </body>
 </html>
